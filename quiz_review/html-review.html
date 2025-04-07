@@ -47,7 +47,8 @@
 
 <fieldset>
     <legend>사이즈 추가</legend>
-        <input type="radio" name="size" checked> Tall
+        <label><input type="radio" name="size" checked> Tall</label>
+        <!-- 글귀 클릭시 항목 선태 가능하게 하는 법 = <label></label> -->
         <input type="radio" name="size"> Grande
     </fieldset>
     <fieldset>
@@ -96,6 +97,7 @@ E-mail : <input type="email"><br>
         <input type="radio" name="size"> Medium
         <input type="radio" name="size"> Large
 </fieldset>
+<!-- 선택 항목이 들어갈 네모 칸 만들기 = <fieldset></fieldset> -->
 <fieldset>
     <legend>토핑 선택</legend>
         <input type="radio"> 베이컨
@@ -194,7 +196,7 @@ E-mail : <input type="email"><br>
 <audio src="../quiz_review/media/5second.mp3" controls></audio>
 <video src="../quiz_review/media/5second.mp4" controls></video>
 <video src="../quiz_review/media/5second.mp4" muted loop></video>
-
+<!-- 영상 루프 코드 = autoplay muted loop -->
 
 </body>
 </html>
