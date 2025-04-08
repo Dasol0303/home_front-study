@@ -1,55 +1,63 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../포폴 사이트 만들기/css/main.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 600px;
+
+            border: 1px solid black;
+            overflow: hidden;
+
+            margin: 20px;
+            
+
+        }
+
+        .container > div {
+            float: left;
+            margin: 20px;
+        }
+
+        .yellow {
+            width: 100px;
+            height: 100px;
+
+            background-color: yellow;
+        }
+        .skyblue {
+            width: 100px;
+            height: 100px;
+
+            background-color: skyblue;
+        }
+        .purple {
+            width: 100px;
+            height: 100px;
+
+            background-color: purple;
+        }
+
+
+
+
+    </style>
 
 </head>
 <body>
-    <div class="header">
-        <div class="top_header">
-            <div class="lan">
-                <select> 
-                    <option>EN</option>
-                    <option>KO</option>
-                    <option>JP</option>
-                </select>
-            </div>
-            <div class="cont">
-                <select> 
-                    <option>USD</option>
-                    <option>KOR</option>
-                    <option>JPA</option>
-                </select>
-            <div class="serch_button">
-                <input type="button">
-            </div>
-            <div>
-
-
-            </div>
-            <div>
-
-
-            </div>
-            <div>
-
-
-            </div>
-        </div>
-
-        <div class="low_header">
-
-
-        </div>
-
-
+    <div class="container">
+        <div class="box yellow"></div>
+        <div class="box skyblue"></div>
+        <div class="box purple"></div>
     </div>
-
-
-
 </body>
 </html>
