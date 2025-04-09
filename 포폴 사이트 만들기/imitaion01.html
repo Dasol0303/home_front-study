@@ -4,8 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            float: left;
+        }
+
+        .lan-box {
+            width: 100px;
+            height: 50px;
+
+            background-color: lightgray;
+            border: 1px solid black;
+            float: left;
+
+            transition-property: all;
+            transition-duration: 2s;
+        }
+
+        .lan {
+            height: 50px;
+
+            display: none;
+            background-color: palegreen;
+            border: 1px dashed blue;
+        }
+        
+        .touch:hover > .lan {
+            display: block;
+            transition-timing-function: ease;
+        }
+
+
+
+
+
+    </style>
+
 </head>
 <body>
-    
+    <div class="container">
+        <div class="lan-box touch">
+            <div class="lan"></div>
+            <div class="lan"></div>
+            <div class="lan"></div>
+        </div>
+
+        <div class="lan-box touch">
+            <div class="lan"></div>
+            <div class="lan"></div>
+            <div class="lan"></div>
+        </div>
+
+        
+        <div class="lan-box touch">
+            <div class="lan"></div>
+            <div class="lan"></div>
+            <div class="lan"></div>
+        </div>
+        <div class="lan-box touch">
+            <div class="lan"></div>
+            <div class="lan"></div>
+            <div class="lan"></div>
+        </div>
+
+
+
+
+    </div>
 </body>
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+
+            border: 1px dotted black;
+        }
+
+        .right {
+            width: 100px;
+            height: 50px;
+
+            border: 1px solid lightgray;
+        }
+
+        .lan {display: none;}
+        .lan-box {
+            width: 100px;
+            height: 50px;
+
+            background-color: lightgray;
+
+        }
+
+        .lan-box:hover > .lan {
+            width: 100px;
+            height: 50px;
+
+            display: block;
+            animation-name: lan-ani;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes lan-ani {
+            0% {
+                height: 0px;
+                opacity: 0;
+
+            }
+            100% {
+                background-color: pink;
+                border: 1px solid lightgray;
+                height: 50px;
+                opacity: 1;
+
+            }
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="nav">
+        <div class="left">
+                <div class="lan-box">
+                    <div class="lan">1</div>
+                    <div class="lan">2</div>
+                    <div class="lan">3</div>
+                </div>
+        </div>
+        <div class="right"></div>
+
+    </div>
+</body>
+</html>
