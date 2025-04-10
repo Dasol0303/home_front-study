@@ -12,70 +12,97 @@
             box-sizing: border-box;
         }
 
-        .nav {
+        /*--------------------header----------------------*/
+        #header {
+            width: auto;
+            height: 100px;
+
+            background-color: lightblue;
+        }
+
+
+        #header-top {
+            height: 100px;
+
+            background-color: lightblue;
+
             display: flex;
-            justify-content: space-between;
-
-            border: 1px dotted black;
-        }
-
-        .right {
-            width: 100px;
-            height: 50px;
-
-            border: 1px solid lightgray;
-        }
-
-        .lan {display: none;}
-        .lan-box {
-            width: 100px;
-            height: 50px;
-
-            background-color: lightgray;
+            
 
         }
+        .header-left {
+            width: 300px;
 
-        .lan-box:hover > .lan {
-            width: 100px;
-            height: 50px;
+            display: flex;
+        }
+        .header-right {
+            width: 300px;
 
-            display: block;
-            animation-name: lan-ani;
-            animation-duration: 1.5s;
-            animation-iteration-count: infinite;
-
+            display: flex;
         }
 
-        @keyframes lan-ani {
-            0% {
-                height: 0px;
-                opacity: 0;
-
-            }
-            100% {
-                background-color: pink;
-                border: 1px solid lightgray;
-                height: 50px;
-                opacity: 1;
-
-            }
+        .menu-box {
+            height: 40px;
+            border: 1px solid black;
         }
+        .lan {
+            width: 25%;
+        }
+
+        /*--------------------main----------------------*/
+        #main {
+            width: auto;
+            height: 400px;
+
+            background-color: lightpink;
+        }
+
+
+        /*--------------------footer----------------------*/
+        #footer {
+            width: auto;
+            height: 400px;
+
+            background-color: lightslategrey;
+        }
+
+
+
 
 
     </style>
 
+
 </head>
 <body>
-    <div class="nav">
-        <div class="left">
-                <div class="lan-box">
-                    <div class="lan">1</div>
-                    <div class="lan">2</div>
-                    <div class="lan">3</div>
-                </div>
+    <div id="header">
+        <div class="header-top">
+            <div class="header-left menu">
+                <div class="lan menu-box">En</div>
+                <div class="lan menu-box">USD</div>
+                <div class="menu-box">검색</div>
+            </div>
+            <div class="header-right menu">
+                <div class="menu-box">+1 234 567 8900</div>
+                <div class="sign menu-box">Sign In</div>
+                <div class="register menu-box">Register</div>
+            </div>
         </div>
-        <div class="right"></div>
+
+        <div class="header-c"></div>
+
+        <div class="header-d"></div>
 
     </div>
+
+    <div id="main">
+
+
+    </div>
+    <div id="footer">
+
+
+    </div>
+
 </body>
 </html>
